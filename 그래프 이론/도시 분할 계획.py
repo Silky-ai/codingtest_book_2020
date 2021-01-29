@@ -16,7 +16,7 @@ def union(parent,a,b):
 edges=[]
 n,m=map(int,input().split())
 for _ in range(m):
-    a,b,c=list(map(int,input().split()))
+    a,b,c=list(map(int,input().strip().split()))
     edges.append((c,a,b))
 parent=[0]*(n+1)
 for i in range(n+1):
